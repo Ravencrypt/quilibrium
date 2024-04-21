@@ -23,21 +23,21 @@ remove the # if you install version 1.5 directly so the qclient is automatically
 The Script automatically copies the key.yml and config.yml to your root folder, make sure to save that somewhere safe as this are the key to your wallet!
 
 Some common commands:
- - stop your node
+ - stop your node:
 service ceremonyclient stop
 
- - start your node
+ - start your node:
 service ceremonyclient start
 
-- see status of your node
+- see status of your node:
 service ceremonyclient status
 
-- see Quil Logs
+- see Quil Logs:
 sudo journalctl -u ceremonyclient.service -f --no-hostname -o cat
 
-- run db console
+- run db console:
 GOEXPERIMENT=arenas go run ./... --db-console
 
-- see peer id
+- see peer id:
 GOEXPERIMENT=arenas go run ./... --peer-id
 
