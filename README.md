@@ -4,7 +4,7 @@ With this guide you can Setup and Update your Quil node
 
 Requirements recommended:
 - min 8 cores
-- 64GB RAM
+- 32GB RAM
 - 500GB Disk Space
 
 Setup:
