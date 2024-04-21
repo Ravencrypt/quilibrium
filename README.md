@@ -1,18 +1,36 @@
 # quillibrium
 Setup and Update Quillibrium Node
-With this guide you can Setup and Update your Quil node
+With this guide you can Setup and Update your Quil node. Script is written for Ubuntu.
 
 Requirements recommended:
 - min 8 cores
 - 32GB RAM
 - 500GB Disk Space
 
+What does the scripts do?
+
 Setup:
+- Install go
+- Set global variables
+- Setup firewall rules
+- Download Ceremony Client (Quil Node)
+- Setup Ceremonyclient Service
+- Install Node Binaries
+- Reload Deamon and start Service
+- Backup key + config to root
+- Build Q client
+
+Update:
+- Update Quil node
+- Check if binary was rebuilt correctly
+
+HowTo:
 - Download setup.sh and update.sh
 - sed -i 's/\r$// setup.sh  (I used notepad++ to create it, so the carriage return characters need to be removed eventually. Just run this so you don't run into issues in any case. Only need to do that once)
 - chmod +x setup.sh (make file executable, only needed once)
 - ./setup.sh (run script)
 - Same goes for the update script.
+- It's possible that a warning pops up "This operation might disrupt your current ssh connection" or something similar. This is because firewall rules get altered - say "y" here
 
 Line 68/69 is commented out
 #cd ceremonyclient/client
