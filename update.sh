@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to update, clean, and rebuild the Ceremony Client project
+# Script to update, clean, and rebuild the Ceremonyclient
 
 # Stop the ceremony client service
 service ceremonyclient stop
@@ -17,7 +17,7 @@ GOEXPERIMENT=arenas go clean -v -n -a ./...
 # Remove the previous build
 rm -f /root/go/bin/node
 
-# Install the project again
+# Install the Binary again
 GOEXPERIMENT=arenas go install ./...
 
 # Check if the new executable is in the expected location
