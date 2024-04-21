@@ -10,7 +10,7 @@ cd /root/ceremonyclient
 git fetch origin
 git merge origin/master  # Assuming you want to merge master; adjust if another branch
 
-# Clean the Go project
+# Clean the Node
 cd node
 GOEXPERIMENT=arenas go clean -v -n -a ./...
 
