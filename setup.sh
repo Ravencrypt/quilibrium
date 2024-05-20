@@ -19,6 +19,7 @@ sleep 20
 
 # Configure the firewall
 ufw enable
+ufw allow 22
 ufw allow 8336
 ufw allow 8337
 ufw allow 8338
