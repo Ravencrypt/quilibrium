@@ -63,8 +63,8 @@ sleep 20
 cp ceremonyclient/node/.config/keys.yml ~
 cp ceremonyclient/node/.config/config.yml ~
 
-# Build the client (for 1.5)
+# Build the client
 cd ceremonyclient/client
-go build ./... -o qclient
+GOEXPERIMENT=arenas go build -o qclient main.go
 
 echo "Setup and build completed successfully!"
