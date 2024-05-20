@@ -25,7 +25,7 @@ Update:
 
 HowTo:
 - Download setup.sh
-- chmod +x setup.sh (make file executable, only needed once)
+- chmod +x setup.sh
 - ./setup.sh (run script)
 - It's possible that a warning pops up "This operation might disrupt your current ssh connection" or something similar. This is because firewall rules get altered - say "y" here
 
