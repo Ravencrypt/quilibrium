@@ -19,7 +19,6 @@ sleep 20
 
 # Configure the firewall
 ufw enable
-ufw allow 22
 ufw allow 8336
 ufw allow 8337
 ufw allow 8338
@@ -43,7 +42,7 @@ ExecStart=/root/go/bin/node ./...
 WantedBy=multi-user.target
 EOF
 
-# Install the Ceremony Client Node
+# Install the Ceremony Client
 cd ceremonyclient/node
 GOEXPERIMENT=arenas go install ./...
 
@@ -65,9 +64,7 @@ cp ceremonyclient/node/.config/keys.yml ~
 cp ceremonyclient/node/.config/config.yml ~
 
 # Build the client (for 1.5)
-#cd ceremonyclient/client
-#go build ./... -o qclient
+cd ceremonyclient/client
+go build ./... -o qclient
 
-
-# Script completion message
 echo "Setup and build completed successfully!"
