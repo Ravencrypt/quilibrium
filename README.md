@@ -27,7 +27,7 @@ HowTo:
 - Download setup.sh
 - chmod +x setup.sh
 - ./setup.sh (run script)
-- It's possible that a warning pops up "This operation might disrupt your current ssh connection" or something similar. This is because firewall rules get altered - say "y" here
+- It's possible that a warning pops up "This operation might disrupt your current ssh connection" or something similar. This is because the firewall gets activated - say "y" here
 
 The Script automatically copies the key.yml and config.yml to your root folder, make sure to save that somewhere safe as this are the keys to your wallet!
 
