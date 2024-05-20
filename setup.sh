@@ -18,7 +18,7 @@ git clone https://github.com/QuilibriumNetwork/ceremonyclient.git
 sleep 10 
 
 # Configure the firewall
-ufw enable
+ufw --force enable
 ufw allow 22
 ufw allow 8336
 ufw allow 8337
