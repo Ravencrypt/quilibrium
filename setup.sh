@@ -12,10 +12,10 @@ source /etc/profile
 
 rm -r go1.20.14.linux-amd64.tar.gz
 
-# Clone the Quillibrium repository
+# Clone the Quilibrium repository
 git clone https://github.com/QuilibriumNetwork/ceremonyclient.git
 
-sleep 20 
+sleep 10 
 
 # Configure the firewall
 ufw enable
