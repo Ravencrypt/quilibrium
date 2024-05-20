@@ -1,4 +1,4 @@
-# quillibrium
+# quilibrium
 Setup and Update Quillibrium Node
 With this guide you can Setup and Update your Quil node. Script is written for Ubuntu.
 
